@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo noupdate="1">
+
+    <record id="task_status_hecho" model="project.tags">
+        <field name="name">Hecho</field>
+    </record>
+
+    <record id="task_status_incompleto" model="project.tags">
+        <field name="name">Incompleta</field>
+    </record>
+
+    <record id="task_status_proceso" model="project.tags">
+        <field name="name">En proceso</field>
+    </record>
+
+</odoo>

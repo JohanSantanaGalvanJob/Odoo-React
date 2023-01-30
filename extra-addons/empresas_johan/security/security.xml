@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ <data>
+ <!-- GRUPO JEFE DE EMPRESAS -->
+ <record id="grupo_jefe" model="res.groups">
+ <field name="name">Empresas/Jefe Empresas</field>
+ <field name="comment">Perfil jefe de empresas y proyectos (Administrador y Jefe)</field>
+ </record>
+ <!-- GRUPO ANALISTA DE EMPRESAS -->
+ <record id="grupo_analista" model="res.groups">
+ <field name="name">Empresas/Analista Empresas</field>
+ <field name="comment">Perfil analista de empresas y proyectos</field>
+ </record>
+
+  <!-- GRUPO PROGRAMADOR DE EMPRESAS -->
+ <record id="grupo_programador" model="res.groups">
+ <field name="name">Empresas/Programador Empresas</field>
+ <field name="comment">Perfil programador de empresas</field>
+ </record>
+ 
+ <!-- GRUPO PROGRAMADOR DE PROYECTOS -->
+ <record id="programador_proyecto" model="res.groups">
+ <field name="name">Proyecto/Programador Proyecto</field>
+ <field name="comment">Perfil programador de proyectos</field>
+ <field name="implied_ids" eval="[(4, ref('base.group_user'))]"></field>
+ <field name="category_id" ref="base.module_category_services_project"></field>
+ </record>
+
+
+
+ <record id = "base.user_admin" model="res.users">
+    <field name="groups_id" eval="[(4,ref('empresas_johan.grupo_jefe'))]"/>
+    </record>
+ </data>
+ </odoo> 

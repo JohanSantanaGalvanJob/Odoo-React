@@ -1,0 +1,25 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_empresas_johan_empresas_johan_jefe,empresas_johan.empresas_johan.jefe,model_empresas_johan_empresas_johan,empresas_johan.grupo_jefe,1,1,1,1
+
+access_empresas_johan_empresas_johan_analista,empresas_johan.empresas_johan.analista,model_empresas_johan_empresas_johan,empresas_johan.grupo_analista,1,0,0,0
+
+access_empresas_johan_empresas_johan_programador,empresas_johan.empresas_johan.programador,model_empresas_johan_empresas_johan,empresas_johan.grupo_programador,1,0,0,0
+
+access_project_project,project.project,model_project_project,empresas_johan.programador_proyecto,1,0,0,0
+
+access_project_task_type_project_user,project.task.type.project.user,model_empresas_johan_empresas_johan,empresas_johan.programador_proyecto,1,0,0,0
+
+access_project_task,project.task,model_project_task,empresas_johan.programador_proyecto,1,1,0,0
+
+access_partner_task_user,base.res.partner user,base.model_res_partner,empresas_johan.programador_proyecto,1,0,0,0
+
+access_resource_calendar,project.resource_calendar user,resource.model_resource_calendar,empresas_johan.programador_proyecto,1,0,0,0
+
+access_resource_calendar_attendance,project.resource_calendar_attendance user,resource.model_resource_calendar_attendance,empresas_johan.programador_proyecto,1,0,0,0
+
+access_resource_calendar_leaves_user,resource.calendar.leaves user,resource.model_resource_calendar_leaves,empresas_johan.programador_proyecto,1,1,1,1
+
+access_account_analytic_account_user,account.analytic.account,analytic.model_account_analytic_account,empresas_johan.programador_proyecto,1,0,0,0
+
+access_project_task_recurrence,project.task.recurrence,model_empresas_johan_empresas_johan,empresas_johan.programador_proyecto,1,0,0,0
